@@ -37,7 +37,7 @@ body{
     letter-spacing: 4px;
 }
 .container nav h1 span{
-    color:rgb(226, 135, 59);
+    color: rgb(226, 135, 59);
 }
 .container nav ul{
     display: flex;
@@ -52,21 +52,23 @@ body{
     pointer-events: all;
     transition: .3s;
     overflow: hidden;
+    color: rgb(241, 176, 102);
 }
 
 .container nav ul li::after{
     content: '';
     position: absolute;
     bottom: 4px;
-    width: 100%;
+    width: 0%;
     height: 3px;
     left: 50%;
     background: rgb(226, 135, 59);
     transform: translateX(-50%);
     transition: .3s;
+    
 }
 .container nav li:hover{
-    color: rgb(236, 158, 94);
+    color: rgba(255, 252, 249, 0.836);
 }
 .container nav li:hover::after{
     width: 80%;
@@ -83,19 +85,34 @@ body{
     font-size: 3.1rem;
 }
 .textBox h1 span{
-    color: rgb(235, 134, 66);
+    color: rgb(207, 107, 26);
 }
 .textBox p{
     font-size: 1.1rem;
+    
 }
 .textBox .homeBtn{
     font-family: 'Poppins';
     padding: 8px 18px;
     margin: 16px 12px;
     font-size: 26px;
-    background-color: transparent;
-    color: var(--i);
-    border: 2px solid var(--i);
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    border-radius: 4px;
+    pointer-events: all;
+    transition: .3s;
+    font-weight: 500;
+
+}
+.textBox .homeBtn1{
+    font-family: 'Poppins';
+    padding: 8px 18px;
+    margin: 16px 12px;
+    font-size: 26px;
+    background-color: black;
+    color: rgb(233, 102, 26);
+    border: 2px solid rgb(233, 102, 26);
     border-radius: 4px;
     pointer-events: all;
     transition: .3s;
@@ -103,7 +120,11 @@ body{
 
 }
 .textBox .homeBtn:hover{
-    background-color: var(--i);
+    background-color: white;
+    color: black;
+}
+.textBox .homeBtn1:hover{
+    background-color: rgb(226, 103, 20);
     color: black;
 }
 .bgAnimation{
@@ -122,7 +143,7 @@ body{
 .colorBox{
     z-index: 2;
     filter: brightness(1.1);
-    transition: 2s ease;
+    transition: 1s ease;
     position: relative;
     margin: 2px;
     background: black;
@@ -130,5 +151,15 @@ body{
 .colorBox:hover{
     background: rgb(241, 147, 38);
     transition-duration: 1s;
+}
+
+.background{
+   position:absolute;
+   width: 100%;
+   height: 60px;
+   bottom:0;
+   left: 0;
+   background: rgb(235, 181, 120);
+   filter: blur(30px);
 }
 
