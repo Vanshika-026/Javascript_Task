@@ -63,6 +63,10 @@ button{
     border-radius: 20px;
     font-weight: 600;
 }
+button:hover{
+    background:rgb(236, 178, 69);
+    
+}
 ul li{
     list-style: none;
     font-size: 17px;
@@ -88,6 +92,7 @@ ul li.checked{
     color: rgb(129, 125, 125);
     text-decoration: line-through; 
 }
+
 ul li.checked::before{
     background-image: url(tick-image.png);
 }

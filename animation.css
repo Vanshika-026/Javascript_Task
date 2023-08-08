@@ -150,7 +150,7 @@ body{
 }
 .colorBox:hover{
     background: rgb(241, 147, 38);
-    transition-duration: 1s;
+    transition-duration: 0.2s;
 }
 
 .background{
