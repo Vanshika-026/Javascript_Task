@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, orange,pink);
+    padding: 10px;
+}
+.todo{
+    width: 100%;
+    max-width: 540px;
+    background: rgb(229, 251, 252);
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    
+}
+.todo h2{
+    color:black;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    margin-left: 145px;
+    font-weight: 780;
+    
+}
+.todo h2 img{
+    width: 45px;
+    height: 45px;
+   margin-left: 6px;
+    
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(245, 184, 196);
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 14px;
+}
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: orange;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+    font-weight: 600;
+}
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+ul li::before{
+    content:'';
+    position:absolute;
+    height: 24px;
+    width: 24px;
+    
+    border-radius: 50%;
+    background-image: url(circle-image.png);
+    background-size: cover;
+    background-position: center;  
+    left:16px;
+ 
+}
+ul li.checked{
+    color: rgb(129, 125, 125);
+    text-decoration: line-through; 
+}
+ul li.checked::before{
+    background-image: url(tick-image.png);
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    color:#555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+ul li span:hover{
+    background: pink;
+}
+
+/* .form-check{
+    color: rgb(139, 139, 223);
+    text-decoration: line-through;
+} */
