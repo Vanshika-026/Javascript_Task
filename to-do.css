@@ -17,16 +17,16 @@
     margin: 100px auto 20px;
     padding: 40px 30px 70px;
     border-radius: 10px;
-    
+    box-shadow:  4px 4px 30px rgba(31, 86, 117, 0.945);
 }
 .todo h2{
-    color:black;
+    color:rgb(20, 17, 17);
     display: flex;
     align-items: center;
     margin-bottom: 40px;
     margin-left: 145px;
     font-weight: 780;
-    
+   
 }
 .todo h2 img{
     width: 45px;
@@ -107,7 +107,3 @@ ul li span:hover{
     background: pink;
 }
 
-/* .form-check{
-    color: rgb(139, 139, 223);
-    text-decoration: line-through;
-} */
