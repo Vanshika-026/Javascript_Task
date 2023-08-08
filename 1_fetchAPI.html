@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>fetch api</title>
 </head>
 <body>
     <div id="data-container"></div>
 
 
     <script>
-        const API_URL = 'https://socket-io-server-mc3e.onrender.com/api/v1/getVisitors';
-        fetch("https://socket-io-server-mc3e.onrender.com/api/v1/getVisitors" ,{method:"GET"}).then(res => res.json()).then(data => {console.log('Data from API:',data); const datacontainer = document.getElementById('data-container');
+        const API_URL = 'https://finalspaceapi.com/api/v0/';
+        fetch("https://finalspaceapi.com/api/v0/" ,{method:"GET"})
+        .then(res => res.json())
+        .then(data => {console.log(data); 
+        const datacontainer = document.getElementById('data-container');
         datacontainer.innerHTML = JSON.stringify(data, 1);
     });
     </script>
